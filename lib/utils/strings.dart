@@ -11,5 +11,7 @@ abstract class Strings{
   static const String back="Back";
   static const String next="Next";
   static const String finish="Finish";
+  static const String zekrHeader='سَبِّحِ اسْمَ رَبِّكَ الأعلى ';
 
 }
+

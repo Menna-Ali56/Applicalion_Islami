@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List <String>backgroundImages=[
   AppAssets.quranBG,
     AppAssets.hadethBG,
-    AppAssets.quranBG,
+    AppAssets.sebhaBG,
     AppAssets.hadethBG,
     AppAssets.quranBG,
 

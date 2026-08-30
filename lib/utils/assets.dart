@@ -12,7 +12,9 @@ abstract class AppAssets{
   static const String suraNumber="assets/images/sura_number.png";
   static const String quranBG="assets/images/home_screen.png";
   static const String hadethBG="assets/images/hadeth_tab_background.png";
-
+  static const String sebhaBG="assets/images/sebha_bg.png";
+  static const String sebhaHead="assets/images/sebha_head.png";
+  static const String sebhaBody="assets/images/sebha_body.png";
 
   static const String hadethIcon="assets/svg/hadeth.svg";
   static const String quranIcon="assets/svg/quran.svg";
