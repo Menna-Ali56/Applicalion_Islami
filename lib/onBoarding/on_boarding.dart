@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:islami/core/strings.dart';
+
 import 'package:islami/models/on_boarding_data_model.dart';
 import 'package:islami/onBoarding/widgets/dot_indicator.dart';
 import 'package:islami/onBoarding/widgets/on_boarding_page.dart';
+import 'package:islami/utils/app_routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../core/app_colors.dart';
-import '../core/assets.dart';
-import '../home_screen.dart';
+import '../utils/app_colors.dart';
+import '../utils/assets.dart';
+import '../utils/strings.dart';
+
 
 class OnBoarding extends StatefulWidget {
   const OnBoarding({super.key});
@@ -91,7 +93,7 @@ class _OnBoardingState extends State<OnBoarding> {
                             _seenOnBoarding();
       
                             Navigator.of(context).pushReplacementNamed(
-                              HomeScreen.routeName,
+                              AppRoutes.mainLayoutRoute,
                             );
       
                             return;
@@ -137,7 +139,7 @@ class _OnBoardingState extends State<OnBoarding> {
   Future<void> _seenOnBoarding() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setBool('firstTime', false);
-    Navigator.pushReplacementNamed(context,HomeScreen.routeName );
+    Navigator.pushReplacementNamed(context,AppRoutes.mainLayoutRoute );
 
   }
 

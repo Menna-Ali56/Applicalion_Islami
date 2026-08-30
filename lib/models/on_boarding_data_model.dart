@@ -1,6 +1,7 @@
-import 'package:islami/core/assets.dart';
+import 'package:islami/utils/assets.dart';
 
-import '../core/strings.dart';
+
+import '../utils/strings.dart';
 
 class OnBoardingDataModel{
   String imagePath;
