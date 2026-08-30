@@ -64,7 +64,11 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen1> {
                     color: AppColors.primaryColor,
                   ),
                 )
-                    :SuraContentWidget(content: verses)
+                    : SingleChildScrollView(
+                  child: SuraContentWidget(
+                    content: verses,
+                  ),
+                ),
               ),
               SizedBox(height: height*0.06,)
             ],
